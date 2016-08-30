@@ -43,3 +43,6 @@ body {
     color: black;
     cursor: pointer;
 }
+.card img {
+	width: 100%;
+}
