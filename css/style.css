@@ -10,7 +10,7 @@ body {
     margin: 50px auto;
 }
 .flip .card.flipped {
-  -webkit-transform: rotatex(-180deg);
+  -webkit-transform: rotatey(-180deg);
 }
 .flip .card {
   width: 100%;
@@ -37,7 +37,7 @@ body {
     cursor: pointer;
 }
 .flip .card .back {
-  -webkit-transform: rotatex(-180deg);
+  -webkit-transform: rotatey(-180deg);
     background: blue;
     background: white;
     color: black;

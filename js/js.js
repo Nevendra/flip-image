@@ -1,7 +1,11 @@
 $(document).ready(function(){
 	
  $('.flip').click(function(){
-        $(this).find('.card').addClass('flipped');
+        if($(this).find('.card').hasClass('flipped')){
+        	$(this).find('.card').removeClass('flipped');
+        } else {
+        	$(this).find('.card').addClass('flipped');
+        }
  });
 
 
