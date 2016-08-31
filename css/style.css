@@ -52,7 +52,7 @@ p {
 .card img {
 	width: 100%;
 }
-.squaredTwo {
+.squaredTwo, .squaredThree, .squaredFour, .squaredFive{
   width: 100px;
   height: 100px;
   position: relative;
@@ -62,7 +62,7 @@ p {
   background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
   box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
 }
-.squaredTwo label {
+.squaredTwo label, .squaredThree label, .squaredFour label, .squaredFive label {
   width: 86px;
   height: 86px;
   cursor: pointer;
@@ -73,7 +73,7 @@ p {
   background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
 }
-.squaredTwo label:after {
+.squaredTwo label:after, .squaredThree label:after, .squaredFour label:after, .squaredFive label:after {
   content: '';
   width: 50px;
   height: 25px;
@@ -88,12 +88,12 @@ p {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.squaredTwo label:hover::after {
+.squaredTwo label:hover::after, .squaredThree label:hover::after, .squaredFour label:hover::after, .squaredFive label:hover::after {
   opacity: 0.3;
 }
-.squaredTwo input[type=checkbox] {
+.squaredTwo input[type=checkbox], .squaredThree input[type=checkbox], .squaredFour input[type=checkbox], .squaredFive input[type=checkbox] {
   visibility: hidden;
 }
-.squaredTwo input[type=checkbox]:checked + label:after {
+.squaredTwo input[type=checkbox]:checked + label:after, .squaredThree input[type=checkbox]:checked + label:after, .squaredFour input[type=checkbox]:checked + label:after, .squaredFive input[type=checkbox]  {
   opacity: 1;
 }

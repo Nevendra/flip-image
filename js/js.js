@@ -22,14 +22,17 @@ var ckbox = $('#squaredTwo');
 
 $('input').on('click',function () {
 		var box = $(this).parent().parent().parent();
-        if (ckbox.is(':checked')) {
+        if ($(this).is(':checked') && $(this).hasClass('flipBox')) {
 	        if(box.find('.card').hasClass('flipped')){
 	        	box.find('.card').removeClass('flipped');
 	        } else {
 	        	box.find('.card').addClass('flipped');
+	        	$(this).attr('disabled', true)
 	        }
         }
     });
+
+
 
 });
 
