@@ -53,6 +53,12 @@ function showImgGallery(box) {
 	$(box.find('.imgDisplay')).fadeIn(3000);
 }
 
+$(".thumbnail").click(function(){
+		var thumb = $(this).parent().parent().parent()
+		$(thumb.find('.bigImg').children()).attr("src", $(this).attr("src"));
+		console.log($(this).attr("src"));
+	});
+
 });
 
 
