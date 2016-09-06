@@ -32,6 +32,18 @@ $('input').on('click',function () {
         }
     });
 
+$('input').on('click',function () {
+		var box = $(this).parent().parent().parent();
+        if ($(this).is(':checked') && $(this).hasClass('slideBox')) {
+	        if(box.find('.card').hasClass('flipped')){
+	        	box.find('.card').removeClass('flipped');
+	        } else {
+	        	box.find('.card').addClass('flipped');
+	        	$(this).attr('disabled', true)
+	        }
+        }
+    });
+
 
 
 });
