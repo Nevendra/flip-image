@@ -15,6 +15,48 @@ p {
 	margin-bottom: 10px;
 }
 
+.slide {
+	width: 75%;
+	float: right;
+	height: auto;
+	background-color: black;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+.slide img {
+	width: 100px;
+	height: 100px;
+}
+.imgGallery {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 10px;
+	background-color: lightgrey;
+}
+
+.imgGallery ul{
+	list-style-type: none; 
+	padding: 0px;
+	margin: 0px;
+}
+
+.imgGallery ul li {
+	display: inline-block;
+}
+
+.bigImg {
+	width: 80%;
+	height: 400px;
+	margin: 0 auto;
+	background-color: grey;
+}
+.bigImg img {
+	height: 95%;
+	width: 95%;
+	margin: 0 auto;
+}
+
 .flip {
   -webkit-perspective: 800;
    width: 75%;
