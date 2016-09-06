@@ -18,8 +18,8 @@ p {
 .flip {
   -webkit-perspective: 800;
    width: 75%;
-   height: 200px;
-    /*position: relative;*/
+   height: 300px;
+    position: relative;
     float: right;
 }
 .flip .card.flipped {
@@ -34,7 +34,7 @@ p {
 .flip .card .face {
   width: 100%;
   height: 100%;
- /* position: absolute;*/
+  position: absolute;
   -webkit-backface-visibility: hidden ;
   z-index: 2;
     font-family: Georgia;
@@ -50,13 +50,12 @@ p {
 }
 .flip .card .back {
   -webkit-transform: rotatey(-180deg);
-    background: blue;
-    background: white;
     color: black;
     cursor: pointer;
 }
 .card img {
-	width: 100%;
+	width: auto;
+	height: 100%;
 }
 .squaredTwo, .squaredThree, .squaredFour, .squaredFive{
   width: 100px;
