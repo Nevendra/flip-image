@@ -55,8 +55,8 @@ p {
 	background-color: grey;
 }
 .bigImg img {
-	height: 95%;
-	width: 95%;
+	height: 100%;
+	width: 100%;
 	margin: 0 auto;
 }
 
