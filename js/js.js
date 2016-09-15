@@ -59,7 +59,24 @@ $(".thumbnail").click(function(){
 		console.log($(this).attr("src"));
 	});
 
+$(".startAnimation").click(function(){
+	$(".transitionAnimation").css("display", "block");
+		function fades(){
+			$(".animationImage").fadeIn(2000, function(){
+				$(".animationImage").fadeOut(1000, function(){
+					$(".transitionAnimation").stop().fadeOut('slow');
+					$('.animationLeft').css("left", "-50%");
+					$('.animationRight').css("right", "-50%");
+					$(".transitionAnimation").stop().fadeOut(3000);
+				});/////// end of fade out
+			});/////end of fadeIn
+		}//// end of fades
+		$('.animationLeft').animate({left: "0px"}, 500);
+		$('.animationRight').animate({right: "0px"}, 500, fades);
 });
+
+});
+
 
 
 
