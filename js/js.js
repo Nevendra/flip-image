@@ -32,20 +32,39 @@ $('input').on('click',function () {
         }
     });
 
+// $('input').on('click',function () {
+// 		var box = $(this).parent().parent().parent();
+//         if ($(this).is(':checked') && $(this).hasClass('slideBox')) {
+// 	        if(box.find('.imgGallery').hasClass('slideImg')){
+// 	        	box.find('.imgGallery').removeClass('slideImg');
+// 	        } else {
+// 	        	box.find('.imgGallery').addClass('slideImg');
+// 	        	if(box.find('.imgGallery').hasClass('slideImg')) {
+// 	        		$(box.find('.imgGallery')).animate({height: '700px'}, 'slow')
+// 	        		$(box.find('.slide')).animate({height: '800px'}, 'slow', showImgGallery(box));
+// 	        	}
+// 	        	$(this).attr('disabled', true)
+// 	        }
+//         }
+//     });
+
 $('input').on('click',function () {
-		var box = $(this).parent().parent().parent();
-        if ($(this).is(':checked') && $(this).hasClass('slideBox')) {
-	        if(box.find('.imgGallery').hasClass('slideImg')){
-	        	box.find('.imgGallery').removeClass('slideImg');
-	        } else {
-	        	box.find('.imgGallery').addClass('slideImg');
-	        	if(box.find('.imgGallery').hasClass('slideImg')) {
-	        		$(box.find('.imgGallery')).animate({height: '700px'}, 'slow')
-	        		$(box.find('.slide')).animate({height: '800px'}, 'slow', showImgGallery(box));
-	        	}
-	        	$(this).attr('disabled', true)
-	        }
-        }
+		var box = $(this).parent().parent().parent().parent();
+		$(box.find('.slide')).slideToggle("slow", showImgGallery(box));
+		$(this).attr('disabled', true)
+		console.log("hey");
+        // if ($(this).is(':checked') && $(this).hasClass('slideBox')) {
+	       //  if(box.find('.imgGallery').hasClass('slideImg')){
+	       //  	box.find('.imgGallery').removeClass('slideImg');
+	       //  } else {
+	       //  	box.find('.imgDisplay').addClass('slideImg');
+	       //  	if(box.find('.imgGallery').hasClass('slideImg')) {
+	       //  		// $(box.find('.imgGallery')).animate({height: '700px'}, 'slow')
+	       //  		$(box.find('.slide')).animate({height: '800px'}, 'slow', showImgGallery(box));
+	       //  	}
+	       //  	$(this).attr('disabled', true)
+	       //  }
+        // }
     });
 
 function showImgGallery(box) {
