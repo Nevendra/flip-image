@@ -111,11 +111,14 @@ html {
   margin-right: 10px;
 }
 
+
 .box5{
   background-color: #9ED9EB;
 }
 .box6{
   background-color: #9EB3EB;
+  width: 90%;
+  height: 230px;
 }
 
 .shadow5,.shadow6 {
@@ -128,13 +131,19 @@ html {
 
 .shadow5 p, .shadow6 p {
   width:87%;
-  height:100px;
   margin-left:6%;
   border:2px dashed #F7EEEE;
   border-radius:5px;
   padding: 3px;
 }
 
+.shadow5 p {
+  height:100px;
+}
+
+.shadow6 p {
+  height:190px;
+}
 .shadow5:before, .shadow5:after{
   content:"";
   position: absolute;
@@ -159,6 +168,46 @@ html {
   z-index:-1;
   box-shadow:0 0 40px 13px #486685;
   border-radius:100px/20px; 
+}
+.flip {
+  -webkit-perspective: 800;
+   width: 70%;
+   /*height: 500px;*/
+    position: relative;
+    float: right;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatey(-180deg);
+}
+.flip .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+.flip .card .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden ;
+  z-index: 2;
+    font-family: Georgia;
+    text-align: center;
+}
+.flip .card .front {
+  position: absolute;
+  z-index: 1;
+    color: white;
+    cursor: pointer;
+}
+.flip .card .back {
+  -webkit-transform: rotatey(-180deg);
+    color: black;
+    cursor: pointer;
+}
+.card img {
+  width: auto;
+  height: 200px;
 }
 
 
